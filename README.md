@@ -49,7 +49,7 @@ Pour le retrouver, connectez-vous à votre outil de saisis de temps et repérez 
 
 ![Où trouver le pool de ressources](pool_de_ressources.png)
 
-> La valeur par défaut dans l'application est `A1039 Socle IAAS Cloud` — modifiez-la si votre pool est différent.
+> La valeur par défaut dans l'application est `A3516 Socle Cloud` — modifiez-la si votre pool est différent.
 
 ---
 
