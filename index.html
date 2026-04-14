@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Générateur de Rapport Triskell - Calendrier Interactif</title>
+    <title>Générateur de Rapport Triskool - Calendrier Interactif</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
     <style>
@@ -458,7 +458,7 @@
 <body>
     <div class="container">
         <div class="header">
-            <h1><i class="fas fa-calendar-alt"></i> Générateur Triskell</h1>
+            <h1><i class="fas fa-calendar-alt"></i> Générateur Triskool</h1>
             <p>Marquez vos jours d'absence dans le calendrier, puis générez votre PDF</p>
         </div>
 
@@ -474,7 +474,7 @@
 
                 <div class="form-group">
                     <label for="poolInput">Pool de ressources</label>
-                    <input type="text" id="poolInput" value="A1039 Socle IAAS Cloud" placeholder="ex: A1039 Socle IAAS Cloud">
+                    <input type="text" id="poolInput" value="A3615 Socle Cloud" placeholder="ex: A3615 Socle Cloud">
                     <div class="form-hint">Utilisé dans le tableau récapitulatif du PDF</div>
                 </div>
 
@@ -728,7 +728,7 @@
             renderCalendar();
         }
 
-        // ─── Logique métier (remplace process_triskell_data) ─────────────────────
+        // ─── Logique métier (remplace process_Triskool_data) ─────────────────────
         function computeDays(year, month, selections) {
             return getCalendarData(year, month).days.map(d => {
                 if (d.is_weekend) {
@@ -845,7 +845,7 @@
             doc.setTextColor(100, 100, 100);
             doc.text('Page 1/1', pageW / 2, 287, { align: 'center' });
 
-            doc.save(`Triskell_${pad(month)}-${year}.pdf`);
+            doc.save(`Triskool_${pad(month)}-${year}.pdf`);
         }
 
         /** Dessine les 3 lignes d'un bloc de jours (en-tête, A1039, EXT) et retourne le y suivant. */
