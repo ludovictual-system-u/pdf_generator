@@ -1,7 +1,7 @@
 # PDF Export Generator
 
 Générateur de rapports de temps au format PDF, **100 % côté navigateur**, sans serveur.
-Hébergé sur GitHub Pages : [https://ludovictual-system-u.github.io/pdf_generator/](https://ludovictual-system-u.github.io/pdf_generator/)
+Hébergé sur GitHub Pages :
 
 ---
 
